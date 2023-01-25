@@ -1,3 +1,12 @@
+.sobra-caja {
+  -webkit-box-shadow: 0 5px 15px 0 rgba(51, 51, 51, 0.3);
+          box-shadow: 0 5px 15px 0 rgba(51, 51, 51, 0.3);
+}
+.Oswald {
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+}
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -5,19 +14,26 @@
 body {
   margin: 0;
   font-family: 'Lato', sans-serif;
+  color: #333333;
+  font-size: 18px;
+  line-height: 28px;
 }
 h1,
 h2,
 h3 {
+  margin: 0;
   font-family: 'Oswald', sans-serif;
   text-transform: uppercase;
-  margin: 0;
+  font-weight: 700;
 }
 .intro {
   width: 100vw;
   height: 100vh;
   margin: 0 auto;
   position: relative;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0 5px 15px 0 rgba(51, 51, 51, 0.3);
+          box-shadow: 0 5px 15px 0 rgba(51, 51, 51, 0.3);
 }
 .intro__imagen {
   width: 100%;
@@ -33,20 +49,23 @@ h3 {
   width: 50%;
   margin: 0 auto;
   position: absolute;
-  top: 250px;
+  top: 200px;
   left: 0;
   right: 0;
   text-align: center;
-  color: #fff;
+  color: #ffffff;
 }
 .intro__categoria {
   font-family: 'Oswald', sans-serif;
   text-transform: uppercase;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.5);
 }
 .intro__titulo {
   font-family: 'Oswald', sans-serif;
   text-transform: uppercase;
   font-size: 70px;
+  line-height: 80px;
 }
 .intro__autor {
   width: 150px;
@@ -55,7 +74,7 @@ h3 {
   top: 600px;
   left: 0;
   right: 0;
-  color: #fff;
+  color: #ffffff;
 }
 .intro__autor img {
   width: 60px;
@@ -66,4 +85,55 @@ h3 {
 }
 .intro__autor span {
   display: in;
+}
+.intro__autor-titulo {
+  color: rgba(255, 255, 255, 0.5);
+}
+.articulo--principal {
+  max-width: 660px;
+  margin: 0 auto;
+}
+.articulo--principal__intro {
+  font-size: 25px;
+  line-height: 35px;
+}
+.articulo--principal h2 {
+  margin: 40px 0;
+  text-align: center;
+  font-size: 50px;
+  line-height: 60px;
+}
+.articulo--principal h3 {
+  color: #8841da;
+  line-height: 28px;
+}
+.contenedor--cajas {
+  width: 1400px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.caja {
+  max-width: 430px;
+  margin: 10px;
+  -webkit-box-shadow: 0 5px 15px 0 rgba(51, 51, 51, 0.3);
+          box-shadow: 0 5px 15px 0 rgba(51, 51, 51, 0.3);
+}
+.caja__contenido {
+  padding: 25px;
+  background-color: #ffffff;
+}
+.caja span {
+  color: #8841da;
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.caja a {
+  text-decoration: none;
+  color: #012179;
 }
